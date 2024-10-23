@@ -1,0 +1,12 @@
+
+
+[Mongo DB 데이터를 활용하여 stramlit 프레임워크 연동하기]
+
+
+[가상환경]
+# conda create -n streamlit python=3.12
+# conda activate streamlit
+
+[pip]
+# pip install streamlit pymongo
+# pip install matplotlib
