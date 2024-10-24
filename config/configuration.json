@@ -1,0 +1,11 @@
+{
+    "database_name": "m_factorybook",
+    "collections" : [
+        "log_data_hum",
+        "log_data_temp",
+        "log_data_vib_x",
+        "log_data_vib_y",
+        "log_data_vib_z"
+    ]
+}
+
