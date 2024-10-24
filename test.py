@@ -24,7 +24,11 @@ except json.JSONDecodeError:
     st.stop()
 
 # Secrets에서 MongoDB URI 가져오기
-client = st.secrets["mongodb"]["uri"]
+try:
+    client = st.secrets["mongodb"]["uri"]
+except KeyError as e:
+    st.error(f"Secrets에서 키를 찾을 수 없습니다: {e}")
+    st.stop()
 
 
 # MongoDB 연결
