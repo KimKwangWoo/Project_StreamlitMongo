@@ -23,6 +23,10 @@ except json.JSONDecodeError:
     st.error("config/configuration.json 파일 형식이 잘못되었습니다.")
     st.stop()
 
+# Secrets에서 MongoDB URI 가져오기
+client = st.secrets["mongodb"]["uri"]
+
+
 # MongoDB 연결
 if 'config' in locals():  # config 변수가 정의되어 있는지 확인
     client = MongoClient(config["mongodb_uri"])         # MongoDB URI
