@@ -1,3 +1,3 @@
 # 환경 설정 파일 무시
-.config/configuration.json
-.streamlit/secrets.toml
+config/configuration.json
+streamlit/secrets.toml
